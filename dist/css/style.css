@@ -155,7 +155,8 @@ body {
 .service-box .box {
     background-color: white;
     padding: 20px;
-    border-radius: 20px;
+    border-radius: 30px;
+    text-align: center;
 }
 
 .service-box .box:hover {
@@ -176,6 +177,14 @@ body {
 }
 
 @media (max-width: 992px) {
-    
+    .service-box {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 575px) {
+    .service-box {
+        grid-template-columns: 1fr;
+    }
 }
 /* Service End */
