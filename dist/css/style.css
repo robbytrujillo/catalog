@@ -56,6 +56,7 @@ body {
 /* ri-menu-3-line remix icon */
 .navbar-box .ri-menu-3-line {
     display: none;
+    font-weight: bold;
 }
 
 @media (max-width: 768px) {
@@ -65,11 +66,28 @@ body {
 
     .navbar-box .menu {
         position: absolute;
-        top: 100px;
+        top: -100%;
         left: 50%;
         transform: translateX(-50%);
         flex-direction: column;
         text-align: center;
+        background-color: rebeccapurple;
+        width: 100%;
+        padding: 40px 0 40px 0;
+        transition: all .2s ease-in-out;
+        /* supaya delaynya lebih smooth */
+        opacity: 0;
+    }
+
+    .navbar-box .menu.menu-active {
+        top: 100px;
+        opacity: 1;
+    }
+
+    .navbar-box .menu li a  {
+        color: white;
+        font-size: 20px;
+        text-decoration: underline;
     }
 }
 /* Navbar End */
