@@ -91,3 +91,51 @@ body {
     }
 }
 /* Navbar End */
+
+/* Hero Start */
+.hero {
+    padding-top: 60px;
+}
+
+.hero-box {
+    /* agar sejajar */
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    /* supaya ada jarak */
+    gap: 30px;
+}
+
+.hero-box h1 {
+    font-size: 54px;
+    line-height: 1.5;
+    margin-bottom: 10px;
+    color: rebeccapurple;
+}
+
+.hero-box p {
+    line-height: 2;
+    margin-bottom: 30px;
+}
+
+.hero-box a {
+    text-decoration: none;
+    background-color: rebeccapurple;
+    color: white;
+    padding: 10px 20px 10px 20px;
+    border-radius: 20px;
+}
+
+.hero-box img {
+    width: 100%;
+    height: 100%;
+    border-radius: 20px;
+}
+
+@media (max-width: 768px) {
+    .hero-box {
+        grid-template-columns: 1fr;
+        text-align: center;
+        gap: 70px;
+    }
+}
+/* Hero End */
