@@ -21,3 +21,10 @@ body {
         width: 90%;
     }
 }
+
+/* Navbar Start */
+.navbar-box {
+    display: flex;
+    justify-content: space-between;
+}
+/* Navbar End */
