@@ -13,7 +13,7 @@ body {
 .container {
     width: 80%;
     margin-inline: auto;
-    background-color: tomato;
+    /* background-color: tomato; */
 }
 
 @media (max-width: 992px) {
@@ -23,8 +23,33 @@ body {
 }
 
 /* Navbar Start */
+.navbar {
+    padding: 20px 0 20px 0;
+}
+
 .navbar-box {
     display: flex;
     justify-content: space-between;
+    align-items: center;
+}
+
+.navbar-box .menu {
+    display: flex;
+    gap: 40px;     
+}
+
+.navbar-box .menu li {
+    list-style-type: none; // menghilangkan titik list
+}
+
+.navbar-box .menu li a  {
+    /* menghilangkan garis bawah */
+    text-decoration: none; 
+    color: black;
+    font-size: 18px; // default 16px
+}
+
+.navbar-box .menu li a:hover {
+    border-bottom: 3px solid rebeccapurple;
 }
 /* Navbar End */
