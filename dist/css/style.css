@@ -52,4 +52,24 @@ body {
 .navbar-box .menu li a:hover {
     border-bottom: 3px solid rebeccapurple;
 }
+
+/* ri-menu-3-line remix icon */
+.navbar-box .ri-menu-3-line {
+    display: none;
+}
+
+@media (max-width: 768px) {
+    .navbar-box .ri-menu-3-line {
+        display: block;
+    }
+
+    .navbar-box .menu {
+        position: absolute;
+        top: 100px;
+        left: 50%;
+        transform: translateX(-50%);
+        flex-direction: column;
+        text-align: center;
+    }
+}
 /* Navbar End */
