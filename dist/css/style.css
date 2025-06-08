@@ -43,7 +43,6 @@ body {
 }
 
 .navbar-box .menu li a  {
-    /* menghilangkan garis bawah */
     text-decoration: none; 
     color: black;
     font-size: 18px; // default 16px
@@ -87,8 +86,12 @@ body {
     .navbar-box .menu li a  {
         color: white;
         font-size: 20px;
-        text-decoration: underline;
+        text-decoration: none;
     }
+
+    .navbar-box .menu li a:hover {
+    border-bottom: 3px solid white;
+}
 }
 /* Navbar End */
 
@@ -273,7 +276,16 @@ body {
 
 .footer p span {
     font-weight: bold;
+    /* color: rebeccapurple; */
+}
+
+.footer p span a {
     color: rebeccapurple;
+    text-decoration: none;
+}
+
+.footer p span a:hover {
+    color: black;
 }
 
 .footer .box:nth-child(2) {
