@@ -234,5 +234,11 @@ body {
     padding: 10px;
     border-radius: 30px;
     cursor: pointer;
+    transition: all 0.2s ease;
+}
+
+.product-box .product-list img:hover {
+    background-color: rebeccapurple;
+    transform: scale(1.05);
 }
 /* Product End */
