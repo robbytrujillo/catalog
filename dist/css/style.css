@@ -256,3 +256,18 @@ body {
     }
 }
 /* Product End */
+
+/* Footer Start */
+.footer {
+    background-color: white;
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.footer p span {
+    font-weight: bold;
+    color: rebeccapurple;
+}
+/* Footer End */
