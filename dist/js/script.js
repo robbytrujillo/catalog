@@ -10,6 +10,7 @@ window.onscroll = () => {
 }
 
 const btnFilter = document.querySelectorAll(".product-box ul li");
+const imgItem = document.querySelectorAll(".product-list img");
 
 btnFilter.forEach((data) => {
   // Button Active
@@ -17,6 +18,16 @@ btnFilter.forEach((data) => {
         btnFilter.forEach((data) => {
             data.className = "";
         });
+
         data.className = "active";
+
+        // Filter Image
+        const btnText = data.textContent;
+        imgItem.forEach((img) => {
+            img.style.display = "none";
+            if (img.getAttribute("data-filter") == btnText.toLowerCase() || btnText == "All Product") {
+                img.style.display = "block";
+            }
+        })
         }
 })

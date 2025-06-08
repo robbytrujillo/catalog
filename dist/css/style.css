@@ -241,4 +241,18 @@ body {
     background-color: rebeccapurple;
     transform: scale(1.05);
 }
+
+@media (max-width: 640px) {
+    .product-box .product-list img {
+        width: 200px;
+        height: 150px;
+    }
+}
+
+@media (max-width: 475px) {
+    .product-box .product-list img {
+        width: 150px;
+        height: 100px;
+    }
+}
 /* Product End */
