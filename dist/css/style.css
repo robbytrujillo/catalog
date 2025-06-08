@@ -214,4 +214,25 @@ body {
     border-radius: 30px;
     cursor: pointer;
 }
+
+.product-box ul li.active {
+    background-color: rebeccapurple;
+    color: white;
+}
+
+.product-box .product-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+}
+
+.product-box .product-list img {
+    width: 250px;
+    height: 200px;
+    background-color: white;
+    padding: 10px;
+    border-radius: 30px;
+    cursor: pointer;
+}
 /* Product End */
