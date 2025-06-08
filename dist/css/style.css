@@ -188,3 +188,30 @@ body {
     }
 }
 /* Service End */
+
+/* Product Start */
+.product {
+    padding-bottom: 150px;
+}
+
+.product-box h1 {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.product-box ul {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    margin-bottom: 50px;
+    flex-wrap: wrap;
+}
+
+.product-box ul li {
+    list-style-type: none;
+    background-color: white;
+    padding: 10px;
+    border-radius: 30px;
+    cursor: pointer;
+}
+/* Product End */
